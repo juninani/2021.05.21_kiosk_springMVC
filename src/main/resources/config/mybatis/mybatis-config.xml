@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false" /> 
+		<setting name="useGeneratedKeys" value="true" />
+		<setting name="defaultExecutorType" value="REUSE" />
+		 <setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+	
+	 <typeAliases> 
+     <typeAlias type="com.kiosk.web.service.dto.BergerVO" alias="berger"/> 
+     <typeAlias type="com.kiosk.web.service.dto.SetBergerVO" alias="sBerger"/> 
+     <typeAlias type="com.kiosk.web.service.dto.SideMenuVO" alias="sideMenu"/> 
+     <typeAlias type="com.kiosk.web.service.dto.DrinkVO" alias="drink"/> 
+     <typeAlias type="com.kiosk.web.service.dto.CartVO" alias="cart"/> 
+     <typeAlias type="com.kiosk.web.service.dto.BuyVO" alias="buy"/> 
+	</typeAliases>
+	
+	<mappers>
+    <mapper resource="config/mybatis/mapper/berger.xml" /> 
+    <mapper resource="config/mybatis/mapper/setBerger.xml" /> 
+    <mapper resource="config/mybatis/mapper/sideMenu.xml" /> 
+    <mapper resource="config/mybatis/mapper/drink.xml" /> 
+     <mapper resource="config/mybatis/mapper/cart.xml" />
+      <mapper resource="config/mybatis/mapper/buy.xml" />
+	</mappers>
+	
+</configuration> 
+
+
+
+
+
+
+
+
+
+

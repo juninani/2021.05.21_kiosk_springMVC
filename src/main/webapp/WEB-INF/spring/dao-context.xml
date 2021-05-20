@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="berger_daoBean"
+		class="com.kiosk.web.service.dao.BergerDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+
+	<bean id="sBerger_daoBean"
+		class="com.kiosk.web.service.dao.SetBergerDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+
+	<bean id="sideMenu_daoBean"
+		class="com.kiosk.web.service.dao.SideMenuDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+
+	<bean id="drink_daoBean"
+		class="com.kiosk.web.service.dao.DrinkDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+
+	<bean id="cart_daoBean"
+		class="com.kiosk.web.service.dao.CartDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+	
+	<bean id="buy_daoBean"
+		class="com.kiosk.web.service.dao.BuyDAO">
+		<property name="sqlSession" ref="sqlSessionBean"></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cart">
+
+<select id="cart_list" resultType="cart">
+		select * from bergercart order by idx desc
+</select>
+
+<insert id="insert_cart" parameterType="cart">
+		insert into bergercart values(bergercart_idx.nextVal,#{name},#{price},1)
+</insert>
+
+<delete id="cart_del" parameterType="int">
+		delete from bergercart where idx=#{idx}
+</delete>
+
+<delete id="cart_del_all">
+
+TRUNCATE TABLE bergercart
+
+</delete>
+
+<select id = "cart_one" parameterType="cart" resultType="cart">
+			select * from bergercart where name=#{name} 
+</select>
+<select id="cart_price" resultType="int">
+	select sum(price*cnt) from bergercart
+</select>
+
+<update id = "update_cart" parameterType = "java.util.HashMap">
+			update bergercart set cnt=#{cnt} where idx=#{idx}
+		</update>
+</mapper>

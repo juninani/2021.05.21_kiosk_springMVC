@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.kiosk</groupId>
+
+	<artifactId>webprj</artifactId>
+
+	<version>0.0.1-SNAPSHOT</version>
+
+	<packaging>war</packaging>
+
+	<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-api -->
+
+
+	<dependencies>
+
+		<!-- 탐켓 -->
+
+		<dependency>
+
+			<groupId>org.apache.tomcat</groupId>
+
+			<artifactId>tomcat-api</artifactId>
+
+			<version>9.0.45</version>
+
+		</dependency>
+
+		<!-- spring mvc -->
+
+		<dependency>
+
+			<groupId>org.springframework</groupId>
+
+			<artifactId>spring-webmvc</artifactId>
+
+			<version>5.2.9.RELEASE</version>
+
+		</dependency>
+
+		<!-- 타일 -->
+
+
+		<dependency>
+
+			<groupId>org.apache.tiles</groupId>
+
+			<artifactId>tiles-jsp</artifactId>
+
+			<version>3.0.8</version>
+
+		</dependency>
+
+		<!-- jstl -->
+
+		<dependency>
+
+			<groupId>javax.servlet</groupId>
+
+			<artifactId>jstl</artifactId>
+
+			<version>1.2</version>
+
+		</dependency>
+
+		<!-- db -->
+
+
+		<dependency>
+
+			<groupId>com.oracle.ojdbc</groupId>
+
+			<artifactId>ojdbc10</artifactId>
+
+			<version>19.3.0.0</version>
+
+		</dependency>
+
+		<!-- spring jdbc -->
+
+
+		<dependency>
+
+			<groupId>org.springframework</groupId>
+
+			<artifactId>spring-jdbc</artifactId>
+
+			<version>5.2.12.RELEASE</version>
+
+		</dependency>
+
+
+		<dependency>
+
+			<!-- 제이슨 -->
+
+		
+			<groupId>com.fasterxml.jackson.core</groupId>
+
+			<artifactId>jackson-databind</artifactId>
+
+			<version>2.11.2</version>
+
+		</dependency>
+
+
+	<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+	
+		<!-- 파일 업로드 -->
+
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.3</version>
+		</dependency>
+
+
+		<dependency>
+
+			<groupId>org.mybatis</groupId>
+
+			<artifactId>mybatis</artifactId>
+
+			<version>3.2.8</version>
+
+		</dependency>
+
+
+
+		<dependency>
+
+			<groupId>org.mybatis</groupId>
+
+			<artifactId>mybatis-spring</artifactId>
+
+			<version>1.2.2</version>
+
+		</dependency>
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<!-- dbcp -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+	<dependency>
+            <groupId>org.webjars.bower</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.5.1 </version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>webjars-locator</artifactId>
+            <version>0.40</version>
+        </dependency>
+        
+	</dependencies>
+
+
+
+	<properties>
+
+		<maven.compiler.source>1.8</maven.compiler.source>
+
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+	</properties>
+
+</project>

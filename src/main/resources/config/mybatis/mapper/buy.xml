@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="buy">
+
+<select id="buy_list" resultType="buy">
+		select * from buy order by idx desc
+</select>
+
+<delete id="buy_del" parameterType="int">
+		delete from buy where idx=#{idx}
+</delete>
+
+<insert id="insert_buy" parameterType="cart">
+		insert into buy values(buy_idx.nextVal,#{name},#{price})
+</insert>
+</mapper>
